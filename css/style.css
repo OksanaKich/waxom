@@ -11,15 +11,66 @@ h1 {
     font-size: 52px;
     font-weight: 800;
     color: #fff;
+
 }
 h1 span {
     font-size: 36px;
     font-weight: 500;
+    display: block;
 }
+
+.btn {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #998675;
+    padding: 18px 35px;
+    border-radius: 5px;
+    border-bottom: solid 3px #64584e;
+}
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #555555;
+}
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #555555;
+}
+
+.wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: block;
+    width: 190px;
+    height: 60px;
+    background-image: url(../img/logo.png); 
+} 
 .nav {
     font-size: 14px;
     font-weight: 300;
     color: #fff;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.nav li {
+    padding: 30px;
 }
 .nav-cart {
     background-image: url(../img/cart.png);
@@ -36,31 +87,61 @@ h1 span {
 .name {
     margin: 0 auto;
     text-align: center;
-    width: 600px;
+    max-width: 700px;
 }
 .name p {
     color: #fff;
     font-size: 16px;
     padding: 0 8px 0 8px;  
 }
-.btn {
-    color: #fff;
-    font-size: 14px;
-    font-weight: 400;
-    text-transform: uppercase;
-    background-color: #998675;
+.about-flex {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    text-align: center;
+    margin: 0 auto;
+
 }
-h2 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 30px;
-    font-weight: 600;
-    color: #555555;
+
+.about-item {
+    display: block;
+    flex-basis: 300px; 
 }
-h3 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 22px;
-    font-weight: 600;
-    color: #555555;
+.about-item-design {
+    background-image: url(../img/icon_pencil.png);
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;  
+}
+.about-item-develop {
+    background-image: url(../img/icon_paper.png);
+    display: block;
+    width: 55px;
+    height: 60px;
+    margin: 0 auto;  
+}
+.about-item-custom {
+    background-image: url(../img/icon_weel.png);
+    display: block;
+    width: 55px;
+    height: 60px;
+    margin: 0 auto;  
+}
+.about-item-marketing {
+    background-image: url(../img/icon_folder.png);
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;  
+}
+.screen {
+    background-image: url(../img/screenshots.png);
+    display: block;
+    width: 1280px;
+    height: 533px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
 }
 .statistic h2 {
     font-size: 48px;
@@ -72,6 +153,14 @@ h3 {
     text-transform: uppercase;
     color: #c7b299;
 }
+.post-flex {
+    display: flex;
+    justify-content: center;    
+}
+.box-post {
+    display: block;
+    flex-basis: 200px; 
+}
 
 /*PAGE*/
 .page-header {
@@ -79,4 +168,26 @@ h3 {
     background-repeat: no-repeat;
     height: 1024px;
     width: 1920px;
+}
+.page-about {
+    margin-top: 70px; 
+}
+.post-one {
+    background-image: url(../img/feet370x220.png);
+    display: block;
+    width: 370px;
+    height: 220px;
+}
+.post-two {
+    background-image: url(../img/note377x252.png);
+    display: block;
+    width: 370px;
+    height: 220px;
+}
+.post-tree {
+    background-image: url(../img/boat1100x667.png);
+    display: block;
+    width: 370px;
+    height: 220px;
+    background-position: -320px -372px;
 }
