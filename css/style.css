@@ -180,6 +180,132 @@ h3 {
 .wordpress-flex .btn {
     margin: 24px;
 }
+.page-projects p {
+    padding: 0 600px;
+}
+.nav-project {
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    margin-top: 30px;
+}
+.nav-project li {
+    padding:;
+}
+.nav-project a {
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: solid 1px #ebebeb;
+}
+.nav-project a:hover {
+    background-color: #998675;
+    color: #fff;
+}
+.box-projects {
+    margin: 0 auto;
+    display: flex;
+    max-width: 1300px;
+    flex-wrap: wrap;  
+    margin-top: 10px; 
+    margin-bottom: 30px; 
+}
+.project-item {
+    width: 370px;
+    height: 340px;
+    background-color: #fbfaf8;
+    text-align: left;
+    margin: 30px 30px;
+}
+.project-item h4 {
+    font-size: 20px;
+    color:#c7b299;
+    margin-left: 30px;
+}
+.project-item h4 span {
+    font-size: 14px;
+    color: #d1d1d1;
+    display: block;
+}
+.project1 {
+    background-image: url(../img/project1.png);
+    width: 370px; 
+    height: 240px; 
+    background-position: 0 -20px; 
+}
+.project2 {
+    background-image: url(../img/project2.png);
+    width: 370px; 
+    height: 240px; 
+    background-position: -34px -62px; 
+}
+.project3 {
+    background-image: url(../img/project3.png);
+    width: 370px; 
+    height: 240px; 
+    background-position: -20px -6px;  
+}
+.project4 {
+    background-image: url(../img/project4.png);
+    width: 370px; 
+    height: 240px;
+    background-position: -3px -127px;    
+}
+.project5 {
+    background-image: url(../img/project5.png);
+    width: 370px; 
+    height: 240px;  
+    background-position: -13px -20px;  
+}
+.project6 {
+    background-image: url(../img/project6.png);
+    width: 370px; 
+    height: 240px;  
+    background-position: 0 -20px;  
+}
+.video-title {
+    color: #fff;
+    padding-top: 350px;
+}
+.video-text {
+    color: #fff;
+    padding: 0 680px;
+    text-align: center;
+}
+.page-video span {
+    color: #c7b299;   
+}
+.mobile-image {
+    background-image: url(../img/hand.png);
+    width: 500px;
+    height: 600px;
+    background-repeat: no-repeat;
+}
+
+.flex-mobile {
+    display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 80px;
+}
+.mobile-item {
+    flex-basis: 35%;
+}
+.page-mobile ul {
+    list-style: none; /* Убираем исходные маркеры */
+    list-style-image: url(../img/arrow_marker.png); /* Путь к изображению маркера */
+}
+.page-mobile li::before { /* Навчитися стилізувати!!! 6-ий урок 8 хвилина*/
+}
 .statistic {
     display: flex;
     max-width: 930px;
@@ -280,12 +406,24 @@ h3 {
 .page-about {
     margin-top: 70px; 
 }
+.page-wordpress {
+    background: linear-gradient(to right, #211b19, #4e3327 ); 
+    padding: 60px 0 60px 0;
+}
 .page-stat {
-    background-color: #271e1b; /*Потім змінити на градієнт до #462f24*/
+    background: linear-gradient(to right, #271e1b, #462f24);
     padding-bottom: 60px;
     padding-top: 60px;
 }
-.page-wordpress {
-    background-color: #211b19; /*Тут також градієнт*/
-    padding: 60px 0 60px 0;
+.page-projects {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+.page-video {
+    background-image: url(../img/play.png);
+    height: 700px;
+    width: 1920px;
+    text-align: center;
 }
