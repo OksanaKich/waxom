@@ -7,6 +7,10 @@ body {
 a {
     text-decoration: none;
 }
+p {
+    line-height: 20px;
+    color: #555555;
+}
 h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 52px;
@@ -41,6 +45,15 @@ h3 {
     font-size: 22px;
     font-weight: 600;
     color: #555555;
+}
+h5 {
+    font-size: 12px;
+    font-weight: 300;
+    color: #fff;
+    padding: 0;
+    margin-bottom: -25px;
+    color: #343434;
+    
 }
 .wrap {
     max-width: 1280px;
@@ -448,6 +461,77 @@ svg {
     width: 250px;
     height: 230px;    
 }
+.page-social h3 {
+    color: #fff;
+}
+.page-social p {
+    color: #555555;
+    padding-right: 30px;
+}
+.social-item-logo p {
+    line-height: 30px;
+    padding: 5px 30px 5px 0;
+}
+.box-social hr {
+    padding: 0;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 30px;
+    border-width: 1px;
+    border-style: solid;
+    color: #252525;
+}
+.box-social {
+    display: flex;
+    justify-content: space-between;
+    padding: 85px 0;   
+}
+.social-item {
+    flex-basis: 25%;
+}
+.widget1 {
+    background-image: url(../img/widget1_150x115.png);
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 100px;
+    background-position: -9px 0px;
+}
+.widget2 {
+    background-image: url(../img/widget2_150x115.png);
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 100px;
+    background-position: -15px -83px;
+}
+.widget3 {
+    background-image: url(../img/widget3_157x110.png);
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 100px;
+    background-position: -15px -6px;
+}
+.widget4 {
+    background-image: url(../img/widget4_138x101.png);
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 100px;
+    background-position: -8px -1px;
+}
+.box-widget {
+    display: flex;
+    flex-wrap: wrap;
+}
+.social-item a {
+    padding: 5px; 
+    color: #fff;
+}
+.social-item span {
+    color:  #343434;
+}
+.social-item .account {
+    color: #00bff3;
+    display: inline;
+}
 .footer li {
     list-style: none;
 }
@@ -492,4 +576,7 @@ svg {
 .footer {
     height: 110px;
     background-color: #111111;
+}
+.page-social {
+    background-color: #191919;
 }
