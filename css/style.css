@@ -181,7 +181,10 @@ h3 {
     margin: 24px;
 }
 .page-projects p {
-    padding: 0 600px;
+    line-height: 20px;
+    max-width: 700px;
+    text-align: center; 
+    margin: 0 auto;
 }
 .nav-project {
     font-size: 14px;
@@ -360,20 +363,29 @@ h3 {
     text-transform: uppercase;
     color: #c7b299;   
 }
-.statistic hr { /*В CSS є birder-bottom - лінія під текстом*/
+.statistic hr { /*В CSS є border-bottom - лінія під текстом*/
     color: #fff;
     size: 3px;
     width: 30px;
     text-align: center;
     margin-top: 30px;
 }
+.posts-title {
+    line-height: 20px;
+    max-width: 700px;
+    text-align: center; 
+    margin: 0 auto;
+}
 .post-flex {
     display: flex;
-    justify-content: center;    
+    justify-content: space-around;  
+    max-width: 1230px;  
+    margin: 0 auto;
 }
 .box-post {
     display: block;
     flex-basis: 200px; 
+    margin: 0 15px;
 }
 .post-one {
     background-image: url(../img/feet370x220.png);
@@ -394,7 +406,51 @@ h3 {
     height: 220px;
     background-position: -320px -372px;
 }
-
+.box-post h4, .box-post p, .box-post a {
+    text-align: left;
+    padding-left: 30px;
+}
+svg {
+    padding-left: 10px;
+}
+.page-posts-arrow {
+    margin: 0 auto;
+    text-align: center;
+}
+.box-label {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding-top: 140px;
+    margin: 0 auto;
+}
+.label1 {
+    background-image: url(../img/logo1.png);
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 230px;    
+}
+.label2 {
+    background-image: url(../img/logo2.png);
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 230px;    
+}
+.label3 {
+    background-image: url(../img/logo3.png);
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 230px;    
+}
+.label4 {
+    background-image: url(../img/logo4.png);
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 230px;    
+}
+.footer li {
+    list-style: none;
+}
 /*PAGE*/
 .page-header {
     background-image: url(../img/bg_shadow.png);
@@ -426,4 +482,14 @@ h3 {
     height: 700px;
     width: 1920px;
     text-align: center;
+}
+.page-label {
+    background-image: url(../img/bg_label.png);
+    height: 490px;
+    width: 1920px;
+    margin-top: 80px;
+}
+.footer {
+    height: 110px;
+    background-color: #111111;
 }
