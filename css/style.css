@@ -6,6 +6,7 @@ body {
 }
 a {
     text-decoration: none;
+    color: #8c8c8c;
 }
 p {
     line-height: 20px;
@@ -23,16 +24,7 @@ h1 span {
     font-size: 36px;
     font-weight: 500;
 }
-.btn {
-    color: #fff;
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
-    background-color: #998675;
-    padding: 18px 35px;
-    border-radius: 5px;
-    border-bottom: solid 3px #64584e;
-}
+
 h2 {
     font-family: 'Raleway', sans-serif;
     font-size: 30px;
@@ -55,6 +47,21 @@ h5 {
     color: #343434;
     
 }
+.btn {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #998675;
+    padding: 18px 35px;
+    border-radius: 5px;
+    border-bottom: solid 3px #64584e;
+}
+.btn:hover {
+    background-color: #c7b299;;
+    color: #343434;
+    transition: 0.3s;
+}
 .wrap {
     max-width: 1280px;
     margin: 0 auto;
@@ -67,7 +74,11 @@ h5 {
     align-items: center;
 }
 .box-header a {
-    color: #fff;
+    color: #ffffff;
+}
+.box-header a:hover {
+    color: #c7b299;
+    transition: 0.3s;
 }
 .logo {
     display: block;
@@ -86,7 +97,7 @@ h5 {
     justify-content: space-between;
 }
 .nav li {
-    padding: 0 30px; /*Так задається відстань між пунктами меню li в .nav*/
+    padding: 0 20px; /*Так задається відстань між пунктами меню li в .nav*/
 }
 .nav-cart {
     background-image: url(../img/cart.png);
@@ -94,11 +105,19 @@ h5 {
     height: 20px;
     width: 20px;
 }
+.nav-cart:hover {
+    background-image: url(../img/cart_hover.png);
+}
 .nav-lupa {
-    background-image: url(../img/lupa_icon.png);
+    background-image: url(../img/search.png);
+    background-repeat: no-repeat;
     display: block;
     height: 25px;
     width: 25px;
+}
+.nav-lupa:hover {
+    background-image: url(../img/search_hover.png);
+    
 }
 .name {
     margin: 300px auto;
@@ -123,6 +142,9 @@ h5 {
 .about-item {
     display: block;
     flex-basis: 300px; 
+}
+.about-item h3:hover ~ .about-item h3 {
+    color: #c7b299;
 }
 .about-item-design {
     background-image: url(../img/icon_pencil.png);
@@ -160,6 +182,7 @@ h5 {
     border-width: 1px;
     border-style: solid;
 }
+
 .page-screen p {
     margin: 0 auto;
     max-width: 750px;
@@ -246,13 +269,16 @@ h5 {
 }
 .project-item h4 {
     font-size: 20px;
+    font-weight: 400;
     color:#c7b299;
     margin-left: 30px;
 }
 .project-item h4 span {
     font-size: 14px;
+    font-weight: 400;
     color: #d1d1d1;
     display: block;
+    padding-top: 10px;
 }
 .project1 {
     background-image: url(../img/project1.png);
@@ -403,6 +429,9 @@ h5 {
     flex-basis: 200px; 
     margin: 0 15px;
 }
+.box-post a {
+    color: #c7b299;
+}
 .post-one {
     background-image: url(../img/feet370x220.png);
     display: block;
@@ -493,6 +522,27 @@ svg {
 .social-item {
     flex-basis: 25%;
 }
+.social-item a {
+    padding: 5px; 
+}
+.social-item a:hover {
+    color: #c7b299;
+}
+.social-item-post p:hover {
+    color: #c7b299;
+}
+.social-item-logo a {
+    color: #fff;
+}
+.social-item span {
+    color:  #343434;
+}
+.social-item-post span:hover {
+    color: #fff;
+}
+.social-item h5:hover {
+    color: #fff;
+}
 .widget1 {
     background-image: url(../img/widget1_150x115.png);
     background-repeat: no-repeat;
@@ -525,12 +575,7 @@ svg {
     display: flex;
     flex-wrap: wrap;
 }
-.social-item a {
-    padding: 5px; 
-}
-.social-item span {
-    color:  #343434;
-}
+
 .social-item .account {
     color: #00bff3;
     display: inline;
@@ -571,8 +616,7 @@ svg {
     background-image: url(../img/bg_shadow.png);
     background-repeat: no-repeat;
     height: 1024px;
-    width: 1920px;
-    
+    width: 1920px;   
 }
 .page-about {
     margin-top: 70px; 
