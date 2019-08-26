@@ -72,6 +72,7 @@ h5 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 40px;
 }
 .box-header a {
     color: #ffffff;
@@ -85,6 +86,7 @@ h5 {
     width: 190px;
     height: 60px;
     background-image: url(../img/logo.png); 
+    margin-left: 55px;
 } 
 .nav {
     font-size: 14px;
@@ -94,10 +96,10 @@ h5 {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .nav li {
-    padding: 0 20px; /*Так задається відстань між пунктами меню li в .nav*/
+    padding: 0 18px; /*Так задається відстань між пунктами меню li в .nav*/
 }
 .nav-cart {
     background-image: url(../img/cart.png);
@@ -120,7 +122,7 @@ h5 {
     
 }
 .name {
-    margin: 300px auto;
+    margin: 232px auto;
     text-align: center;
     max-width: 600px;
 }
@@ -141,7 +143,7 @@ h5 {
 }
 .about-item {
     display: block;
-    flex-basis: 300px; 
+    flex-basis: 25%;
 }
 .about-item h3:hover ~ .about-item h3 {
     color: #c7b299;
@@ -187,12 +189,12 @@ h5 {
     margin: 0 auto;
     max-width: 750px;
     text-align: center;
-    margin-bottom: 50px;
 }
 .screen {
-    background-image: url(../img/screenshots.png);
+    background: url(../img/screenshots.png) center;
+    background-repeat: no-repeat;
     display: block;
-    width: 1280px;
+    width: 100vw;
     height: 533px;
     background-repeat: no-repeat;
     margin: 0 auto;
@@ -200,13 +202,16 @@ h5 {
 }
 .wordpress-flex {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
 }
 .wordpress h2 {
     color: #fff;
     font-size: 28px;
     font-weight: 400;
     margin-bottom: 10px;
+   
 }
 .wordpress span {
     color: #998675;
@@ -217,7 +222,9 @@ h5 {
     margin-top: 0;
 }
 .wordpress-flex .btn {
-    margin: 24px;
+    margin: 29px;
+    margin-right: -48px;
+    
 }
 .page-projects p {
     line-height: 20px;
@@ -235,7 +242,7 @@ h5 {
     display: flex;
     justify-content: space-between;
     max-width: 700px;
-    margin-top: 30px;
+    margin-top: 42px;
 }
 .nav-project li {
     padding:;
@@ -257,15 +264,17 @@ h5 {
     display: flex;
     max-width: 1300px;
     flex-wrap: wrap;  
+    justify-content: space-between;
     margin-top: 10px; 
-    margin-bottom: 30px; 
+    margin-bottom: 20px; 
+   
 }
 .project-item {
     width: 370px;
     height: 340px;
     background-color: #fbfaf8;
     text-align: left;
-    margin: 30px 30px;
+    margin: 20px 0px;
 }
 .project-item h4 {
     font-size: 20px;
@@ -321,8 +330,11 @@ h5 {
     padding-top: 350px;
 }
 .video-text {
+    display: block;
+    max-width: 700px;
     color: #fff;
-    padding: 0 680px;
+    margin: 0 auto;
+    
     text-align: center;
 }
 .page-video span {
@@ -343,11 +355,14 @@ h5 {
     margin-top: 80px;
 }
 .mobile-item {
-    flex-basis: 35%;
+    flex-basis: 41%;
+    margin-top: 10px;
 }
 .page-mobile ul {
     list-style: none; /* Убираем исходные маркеры */
     list-style-image: url(../img/arrow_marker.png); /* Путь к изображению маркера */
+    margin: 10px;
+    padding: 10px;
 }
 .page-mobile li::before { /* Навчитися стилізувати!!! 6-ий урок 8 хвилина*/
 }
@@ -417,12 +432,14 @@ h5 {
     max-width: 700px;
     text-align: center; 
     margin: 0 auto;
+    margin-bottom: 30px;
 }
 .post-flex {
     display: flex;
     justify-content: space-around;  
     max-width: 1230px;  
     margin: 0 auto;
+    padding-bottom: 20px;
 }
 .box-post {
     display: block;
@@ -461,6 +478,7 @@ svg {
 .page-posts-arrow {
     margin: 0 auto;
     text-align: center;
+    margin-top: 40px;
 }
 
 .box-label {
@@ -613,39 +631,51 @@ svg {
 }
 /*PAGE*/
 .page-header {
-    background-image: url(../img/bg_shadow.png);
+    background: url(../img/bg_shadow.png) center;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 1024px;
-    width: 1920px;   
+    height: 938px;
+    width: 100vw;   
 }
 .page-about {
     margin-top: 70px; 
 }
+.page-screen {
+    padding-top: 90px;
+}
 .page-wordpress {
     background: linear-gradient(to right, #211b19, #4e3327 ); 
-    padding: 60px 0 60px 0;
+    padding-bottom: 28px;
+    padding-top: 10px;
 }
 .page-stat {
     background: linear-gradient(to right, #271e1b, #462f24);
-    padding-bottom: 60px;
+    padding-bottom: 96px;
     padding-top: 60px;
 }
 .page-projects {
     margin: 0 auto;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 42px;
     padding-bottom: 80px;
 }
 .page-video {
-    background-image: url(../img/play.png);
+    background: url(../img/play.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 700px;
-    width: 1920px;
+    width: 100vw;
     text-align: center;
 }
+.page-posts {
+    padding-top: 52px;
+}
 .page-label {
-    background-image: url(../img/bg_label.png);
+    background: url(../img/bg_label.png) center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 490px;
-    width: 1920px;
+    width: 100vw;
     margin-top: 80px;
 }
 
@@ -656,3 +686,5 @@ svg {
     height: 110px;
     background-color: #111111;
 }
+
+/*MEDIA*/
