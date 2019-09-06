@@ -108,8 +108,12 @@ h5 {
     background-image: url(../img/cart.png);
     display: block;
     height: 20px;
-    width: 20px;
+    width: 20px;   
 }
+.box-header li {
+    list-style-type: none;
+}
+
 .nav-cart:hover {
     background-image: url(../img/cart_hover.png);
 }
@@ -145,15 +149,16 @@ h5 {
     top: 30px;
     left: 0;
     right: 0;
-    max-width: 700px;
     margin: 0 auto;
     text-align: center;
     background-color: #343434;
     border: 1px solid #f1f1f1;
-    padding: 30px 15px 45px 15px;
+    padding: 30px 5px 50px 5px;
     box-shadow: 0 5px 6px #9b9a9a;
     border-radius: 10px;
-    max-width: 400px;
+    width: 95vw;
+    margin-left: 10px;
+    margin-right: 0;
 }
 
 .nav-modal {
@@ -171,7 +176,6 @@ h5 {
     font-size: 35px;
     color: #000;
     opacity: 0.2;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 .btn-close:hover {
@@ -309,9 +313,6 @@ h5 {
     max-width: 700px;
     margin-top: 42px;
 }
-.nav-project li {
-    padding:;
-}
 .nav-project a {
     font-size: 14px;
     font-weight: 500;
@@ -361,6 +362,7 @@ h5 {
 .project1 {
     background: url(../img/project1.png) center center /cover;
     background-size: cover;
+    background-repeat: no-repeat;
     width: 100%; 
     height: 240px; 
     margin: 0 auto;
@@ -371,30 +373,35 @@ h5 {
     width: 100%; 
     height: 240px;  
     background-position: -18px -62px; 
+    background-repeat: no-repeat;
 }
 .project3 {
     background-image: url(../img/project3.png);
     width: 100%; 
     height: 240px; 
-    background-position: -20px -6px;  
+    background-position: -20px -6px;
+    background-repeat: no-repeat;  
 }
 .project4 {
     background-image: url(../img/project4.png);
     width: 100%; 
     height: 240px; 
-    background-position: -3px -127px;    
+    background-position: -3px -127px;  
+    background-repeat: no-repeat;  
 }
 .project5 {
     background-image: url(../img/project5.png);
     width: 100%; 
     height: 240px;  
-    background-position: -5px -20px;  
+    background-position: -5px -20px; 
+    background-repeat: no-repeat; 
 }
 .project6 {
     background-image: url(../img/project6.png);
     width: 100%; 
     height: 240px; 
     background-position: 0 -20px;  
+    background-repeat: no-repeat;
 }
 .video-title {
     color: #fff;
@@ -496,7 +503,6 @@ h5 {
 }
 .box-statistic hr { /*В CSS є border-bottom - лінія під текстом*/
     color: #fff;
-    size: 3px;
     width: 30px;
     text-align: center;
     margin-top: 30px;
@@ -573,30 +579,35 @@ svg {
 .box-label {
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
     padding-top: 140px;
     margin: 0 auto;
     flex-wrap: wrap;
 }
-.label1 {
+.label-item {
+    flex-basis: 25%;
+} 
+.label-item span{
+    display: block;
+}
+.label1 span {
     background-image: url(../img/logo1.png);
     background-repeat: no-repeat;
     width: 250px;
     height: 230px;    
 }
-.label2 {
+.label2 span {
     background-image: url(../img/logo2.png);
     background-repeat: no-repeat;
     width: 250px;
     height: 230px;    
 }
-.label3 {
+.label3 span{
     background-image: url(../img/logo3.png);
     background-repeat: no-repeat;
     width: 250px;
     height: 230px;    
 }
-.label4 {
+.label4 span{
     background-image: url(../img/logo4.png);
     background-repeat: no-repeat;
     width: 250px;
@@ -767,13 +778,13 @@ svg {
     background: url(../img/bg_label.png) center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 490px;
     width: 100vw;
     margin-top: 80px;
 }
 
 .page-social {
     background-color: #191919;
+    width: 100vw;
 }
 .footer {
     height: 110px;
@@ -789,10 +800,28 @@ svg {
         display: block;
         margin-right: 30px;
     }
+    .project-item {
+        flex-basis: 50%;
+    }
+    .box-projects {
+        margin: 0 auto;
+
+    }
+
+    .label-item {
+        flex-basis: 50%;
+    }
+    .box-label span{
+        margin: 0 auto;
+    }
 }
 @media (max-width: 700px) {
     .page-header {
-        width: 700px;
+        width: 100vw;
+        text-align: center;
+    }
+    a.nav-cart {
+        margin: 0 auto;
         text-align: center;
     }
     .name {
@@ -803,7 +832,7 @@ svg {
     }
     body {
         padding: 0 5px;
-        max-width: 700px;
+        max-width: 100vw;
     }
     .wrap {
         max-width: 650px;
@@ -813,7 +842,7 @@ svg {
         margin: 0 auto;
         padding: 0;
         text-align: center;
-        width: 650px;
+        width: 100vw;
     }
     .about-item {
         flex-basis: 50%;
@@ -832,12 +861,16 @@ svg {
     .nav-project a {
         padding: 10px 15px;
     }
+    .box-projects {
+        margin: 0 auto;
+        margin-left: 0;
+    }
     .project-item {
         margin: 0 auto;
         padding: 0;
         margin-bottom: 40px;
+        flex-basis: 50%;
     }
-
     .mobile-image {
         display: none;
     }
@@ -850,22 +883,14 @@ svg {
         margin: 0 auto;
         padding: 10px 0;
     }
-
-    .label-item {
-        flex-basis: 100%;
-        width: 100%;
-        height: 100%;
-        padding: 20px 0;
-        margin: 0 auto;
-    }
     .social-item {
         flex-basis: 100%;
     }
+    .box-social {
+        margin-right: 30px;
+    }
     .box-post {
         margin: 0;
-    }
-    .footer {
-        max-width: 700px;
     }
     .box-copy li:nth-child(5) { /*Відступ робиться за допомогою псевдокласу nth-child(n) так само зробити в header*/
         padding: 0;
@@ -873,4 +898,77 @@ svg {
     .box-copy li:nth-child(6) {
         padding-left: 50px;
     }
+    .page-footer {
+        margin-right: 0;
+        padding-right: 0;
+        background-size:  100vw;
+    }
+}
+@media (max-width: 540px) {
+    .logo {
+        margin-left: 0px;
+    } 
+    .wrap {
+        max-width: 100vw;
+    }
+    .video-text {
+        max-width: 100vw;
+        padding: 10px 5px;
+    }
+    .nav-project li {
+        flex-basis: 50%; 
+    }
+    .project-item {
+        flex-basis: 100%;
+        max-width: 75vw;
+    }
+    .label-item {
+        flex-basis: 50%;
+    }
+    .label-item {
+        margin: 0 auto;
+    }
+    .box-widget{
+        flex-basis: 50%;
+        margin-right: 0;
+        max-width: 400px;
+    }
+    .page-social {
+        margin-right: 0;
+        padding-right: 0;
+    }
+    .page-footer{
+        width: 100vw;
+    }
+    .box-social {
+        padding: 20px 0;
+    }
+
+    .box-copy li {
+        padding: 0 0 0 5px;
+    }
+    .box-copy li:first-child {
+        padding: 0;
+    }
+    .box-copy li:nth-child(5) {
+        padding: 0;
+    }
+    .box-copy li:nth-child(6) {
+        padding: 0 0 20 0;
+    } 
+}
+@media (max-width: 400px) {
+    .logo {
+        margin-left: 0;
+    } 
+    .project-item {
+        flex-basis: 100%;
+        max-width: 100vw;
+    }
+    .box-copy li:nth-child(6) {
+        padding: 0;
+    } 
+    .box-copy li:nth-child(4) {
+        padding: 0;
+    } 
 }
